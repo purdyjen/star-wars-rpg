@@ -1,0 +1,17 @@
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.card {
+    display: flex;
+}
+
+#side {
+    margin: 0 auto;
+    width: 300px;
+}
