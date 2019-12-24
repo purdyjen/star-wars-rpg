@@ -26,6 +26,7 @@
         <button type="button" id="Sith" class="btn btn-dark center-block">Sith</button>
       </div>
 
+  <div id="selection-complete">
       <!-- Choose Character -->
        <!-- light -->
       <div class="container hidden" id="jedi-characters">
@@ -290,7 +291,7 @@
           </div>
         </div>
         </div>
-      
+    </div>
 
       <!-- Fighting Arena -->
       <div class="arena hidden">
@@ -299,17 +300,262 @@
             <div class="row">
               <div id="attacker-jedi" class="col-6">
                 <h3 >Attacker</h3>
+                <div class="container" id="jedi-characters">
+                  <div class="card-deck light hidden">
+                    <div class="qui-gon card light" style="width: 150px;">
+                      <img
+                        src="assets/images/Qui-Gon-Jinn.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Qui-Gon Jinn</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="qui-gon" class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+                    
+                    <div  class="card light obi-wan hidden" style="width: 150px;">
+                      <img
+                        src="assets/images/obi-wan.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Obi-Wan Kenobi</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="obi-wan" class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+          
+                    <div class="card light luke hidden" style="width: 150px;">
+                      <img
+                        src="assets/images/luke-skywalker2.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Luke Skywalker</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="luke" class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+          
+                    <div  class="card light rey hidden" style="width: 150px;">
+                      <img src="assets/images/rey1.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Rey</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="rey" class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               <div id="defender-sith" class="col-6">
                 <h3>Defender</h3>
+                <div class="container" id="jedi-opponents">
+                <div class="card-deck">
+                  <div class="hidden card dark text-white bg-dark sidious2" style="width: 150px;">
+                    <img
+                      src="assets/images/darth-sidious.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Darth Sidious</h5>
+                      <p class="card-text">
+                        Attack: #
+                      </p>
+                      <a href="#" id="sidious2" class="btn btn-danger">Select</a>
+                    </div>
+                  </div>
+          
+                  <div class="hidden card dark text-white bg-dark maul2" style="width: 150px;">
+                    <img
+                      src="assets/images/DarthMaul-SWD.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Darth Maul</h5>
+                      <p class="card-text">
+                        Attack: #
+                      </p>
+                      <a href="#" id="maul2" class="btn btn-danger">Select</a>
+                    </div>
+                  </div>
+          
+                  <div class="hidden card dark text-white bg-dark vader2" style="width: 150px;">
+                    <img
+                      src="assets/images/vader.jpeg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Darth Vader</h5>
+                      <p class="card-text">
+                        Attack: #
+                      </p>
+                      <a href="#" id="vader2"class="btn btn-danger">Select</a>
+                    </div>
+                  </div>
+          
+                  <div class="hidden card dark text-white bg-dark kylo2" style="width: 150px;">
+                    <img
+                      src="assets/images/Kylo-Ren-Lightsaber.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Kylo Ren</h5>
+                      <p class="card-text">
+                        Attack: #
+                      </p>
+                      <a href="#" id="kylo2" class="btn btn-danger">Select</a>
+                    </div>
+                  </div>
+                </div>
+                </div>
               </div>
+
               <div id="attacker-sith" class="col-6">
                 <h3 >Attacker</h3>
+                <div class="container" id="sith-characters">
+                      <div class="card-deck dark">
+                        <div class="hidden card dark text-white bg-dark sidious" style="width: 150px;">
+                          <img
+                            src="assets/images/darth-sidious.jpg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Darth Sidious</h5>
+                            <p class="card-text">
+                              Attack: #
+                            </p>
+                            <a href="#" id="sidious" class="btn btn-danger">Select</a>
+                          </div>
+                        </div>
+          
+                        <div class="hidden card dark text-white bg-dark maul" style="width: 150px;">
+                          <img
+                            src="assets/images/DarthMaul-SWD.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Darth Maul</h5>
+                            <p class="card-text">
+                              Attack: #
+                            </p>
+                            <a href="#" id="maul" class="btn btn-danger">Select</a>
+                          </div>
+                        </div>
+          
+                        <div class="hidden card dark text-white bg-dark vader" style="width: 150px;">
+                          <img
+                            src="assets/images/vader.jpeg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Darth Vader</h5>
+                            <p class="card-text">
+                              Attack: #
+                            </p>
+                            <a href="#" id="vader" class="btn btn-danger">Select</a>
+                          </div>
+                        </div>
+          
+                        <div class="hidden card dark text-white bg-dark kylo" style="width: 150px;">
+                          <img
+                            src="assets/images/Kylo-Ren-Lightsaber.jpg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Kylo Ren</h5>
+                            <p class="card-text">
+                              Attack: #
+                            </p>
+                            <a href="#" id="kylo" class="btn btn-danger">Select</a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
               </div>
               
               <div id="defender-jedi" class="col-6">
                 <h3>Defender</h3>
+                <div class="container" id="sith-opponents">
+                  <div class="card-deck">
+                    <div class="hidden qui-gon2 card light" style="width: 150px;">
+                      <img
+                        src="assets/images/Qui-Gon-Jinn.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Qui-Gon Jinn</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="qui-gon2" class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+          
+                    <div class="hidden obi-wan2 card light" style="width: 150px;">
+                      <img
+                        src="assets/images/obi-wan.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Obi-Wan Kenobi</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="obi-wan2" class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+          
+                    <div class="hidden luke2 card light" style="width: 150px;">
+                      <img
+                        src="assets/images/luke-skywalker2.jpeg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Luke Skywalker</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="luke2" class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+          
+                    <div class="hidden rey2 card light" style="width: 150px;">
+                      <img src="assets/images/rey1.jpg" class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Rey</h5>
+                        <p class="card-text">
+                          Attack: #
+                        </p>
+                        <a href="#" id="rey2"class="btn btn-success">Select</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
               </div>
             </div>
             

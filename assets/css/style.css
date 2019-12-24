@@ -53,7 +53,7 @@
     background-size: 150%;
     background-color: #000000;
     height: 700px;
-    border-right: 10px solid #571822;
+    border-left: 10px solid #571822;
 }
 
 #defender-jedi h3 {
@@ -66,7 +66,7 @@
     background-size: 150%;
     background-color: #000000;
     height: 700px;
-    border-left: 10px solid #571822;
+    border-right: 10px solid #571822;
 }
 
 #attacker-sith h3 {
