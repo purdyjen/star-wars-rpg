@@ -22,3 +22,53 @@
     position: absolute;
     right: 0;
 }
+
+#attacker-jedi {
+    background-image: url("../images/bg/rebel.jpg");
+    background-size: 150%;
+    background-color: #000000;
+    height: 700px;
+    border-right: 10px solid #571822;
+}
+
+#attacker-jedi h3 {
+    color: #ffffff;
+    text-align: right;
+}
+
+#defender-sith {
+    background-image: url("../images/bg/empire.jpg");
+    background-size: 150%;
+    background-color: #000000;
+    height: 700px;
+    border-left: 10px solid #571822;
+}
+
+#defender-sith h3 {
+    color: #ffffff;
+}
+
+#defender-jedi {
+    background-image: url("../images/bg/rebel.jpg");
+    background-size: 150%;
+    background-color: #000000;
+    height: 700px;
+    border-right: 10px solid #571822;
+}
+
+#defender-jedi h3 {
+    color: #ffffff;
+    text-align: right;
+}
+
+#attacker-sith {
+    background-image: url("../images/bg/empire.jpg");
+    background-size: 150%;
+    background-color: #000000;
+    height: 700px;
+    border-left: 10px solid #571822;
+}
+
+#attacker-sith h3 {
+    color: #ffffff;
+}
