@@ -25,6 +25,7 @@ $('#qui-gon').on("click", function() {
     $('.luke').addClass('hidden');
     $('.rey').addClass('hidden');
     $('#jedi-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
 $('#obi-wan').on("click", function() {
@@ -32,6 +33,7 @@ $('#obi-wan').on("click", function() {
     $('.luke').addClass('hidden');
     $('.rey').addClass('hidden');
     $('#jedi-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
 $('#luke').on("click", function() {
@@ -39,6 +41,7 @@ $('#luke').on("click", function() {
     $('.qui-gon').addClass('hidden');
     $('.rey').addClass('hidden');
     $('#jedi-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
 $('#rey').on("click", function() {
@@ -46,6 +49,7 @@ $('#rey').on("click", function() {
     $('.luke').addClass('hidden');
     $('.qui-gon').addClass('hidden');
     $('#jedi-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
 //sith
@@ -54,6 +58,7 @@ $('#sidious').on("click", function() {
     $('.vader').addClass('hidden');
     $('.kylo').addClass('hidden');
     $('#sith-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
 $('#maul').on("click", function() {
@@ -61,6 +66,7 @@ $('#maul').on("click", function() {
     $('.vader').addClass('hidden');
     $('.kylo').addClass('hidden');
     $('#sith-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
 $('#vader').on("click", function() {
@@ -68,6 +74,7 @@ $('#vader').on("click", function() {
     $('.sidious').addClass('hidden');
     $('.kylo').addClass('hidden');
     $('#sith-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
 $('#kylo').on("click", function() {
@@ -75,14 +82,79 @@ $('#kylo').on("click", function() {
     $('.sidious').addClass('hidden');
     $('.vader').addClass('hidden');
     $('#sith-opponents').removeClass('hidden');
+    $('this').addClass('selected-character').detach('this').appendTo('#arena');
 });
 
+// *~*~*~*~*~*~*~ Choose an opponent *~*~*~*~*~*~*~
 
+//Jedi Opponents
+$('#sidious2').on("click", function() {
+    $('.maul2').addClass('hidden');
+    $('.vader2').addClass('hidden');
+    $('.kylo2').addClass('hidden');
+    $('this').appendTo('#arena');
+    $('jedi-opponents').addClass('hidden');
+    $('jedi-characters').addClass('hidden');
+    $('.arena').removeClass('hidden');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
 
+$('#maul2').on("click", function() {
+    $('.sidious2').addClass('hidden');
+    $('.vader2').addClass('hidden');
+    $('.kylo2').addClass('hidden');
+    $('this').addClass('selected-opponent').detach('this').appendTo('#arena');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
 
+$('#vader2').on("click", function() {
+    $('.maul2').addClass('hidden');
+    $('.sidious2').addClass('hidden');
+    $('.kylo2').addClass('hidden');
+    $('this').addClass('selected-opponent').detach('this').appendTo('#arena');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
 
+$('#kylo2').on("click", function() {
+    $('.maul2').addClass('hidden');
+    $('.sidious2').addClass('hidden');
+    $('.vader2').addClass('hidden');
+    $('this').addClass('selected-opponent');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
 
+//sith opponents
+$('#qui-gon2').on("click", function() {
+    $('.obi-wan2').addClass('hidden');
+    $('.luke2').addClass('hidden');
+    $('.rey2').addClass('hidden');
+    $('this').addClass('selected-opponent').detach('this').appendTo('#arena');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
 
+$('#obi-wan2').on("click", function() {
+    $('.qui-gon2').addClass('hidden');
+    $('.luke2').addClass('hidden');
+    $('.rey2').addClass('hidden');
+    $('this').addClass('selected-opponent').detach('this').appendTo('#arena');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
+
+$('#luke2').on("click", function() {
+    $('.obi-wan2').addClass('hidden');
+    $('.qui-gon2').addClass('hidden');
+    $('.rey2').addClass('hidden');
+    $('this').addClass('selected-opponent').detach('this').appendTo('#arena');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
+
+$('#rey2').on("click", function() {
+    $('.obi-wan2').addClass('hidden');
+    $('.luke2').addClass('hidden');
+    $('.qui-gon2').addClass('hidden');
+    $('this').addClass('selected-opponent').detach('this').appendTo('#arena');
+    // $('confirm-selections').removeClass('hidden').addClass('visible');
+});
 
 
 

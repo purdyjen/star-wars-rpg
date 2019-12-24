@@ -5,6 +5,7 @@
 
 .visible {
     visibility: visible;
+    display: block;
 }
 
 .card {
@@ -14,4 +15,10 @@
 #side {
     margin: 0 auto;
     width: 300px;
+}
+
+#confirm-selections {
+    float: right;
+    position: absolute;
+    right: 0;
 }
