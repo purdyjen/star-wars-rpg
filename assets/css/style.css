@@ -72,3 +72,18 @@
 #attacker-sith h3 {
     color: #ffffff;
 }
+
+.selected-attacker {
+    visibility: visible;
+    display: block;
+}
+
+.selected-defender {
+    visibility: visible;
+    display: block;
+}
+
+.card-deck {
+    vertical-align: middle;
+}
+
