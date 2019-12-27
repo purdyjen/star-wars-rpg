@@ -73,17 +73,7 @@
     color: #ffffff;
 }
 
-.selected-attacker {
-    visibility: visible;
-    display: block;
-}
-
-.selected-defender {
-    visibility: visible;
-    display: block;
-}
-
-.card-deck {
+.attacker, .defender{
+    margin: 150px auto;
     vertical-align: middle;
 }
-

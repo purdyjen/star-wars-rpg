@@ -3,8 +3,8 @@ $(function(){ //doc ready opening tags
 var quigon = {
     Name: "Qui-Gon Jinn",
     Side: "Jedi",
-    Health: 150
-
+    Health: 150,
+    Attack: 16,
 };
 
 
