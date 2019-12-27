@@ -7,6 +7,70 @@ var quigon = {
     Attack: 16,
 };
 
+//Jedi
+//   var quigon = {
+//     Name: "Qui-Gon Jinn",
+//     Side: "Jedi",
+//     Health: 150,
+//     Attack: 16,
+//     Defense: 15
+//   };
+//   var obiwan = {
+//     Name: "Obi-Wan Kenobi",
+//     Side: "Jedi",
+//     Health: 120,
+//     Attack: 8,
+//     Defense: 22
+//   };
+
+//   var luke = {
+//     Name: "Luke Skywalker",
+//     Side: "Jedi",
+//     Health: 100,
+//     Attack: 13,
+//     Defense: 5
+//   };
+
+//   var rey = {
+//     Name: "Rey",
+//     Side: "Jedi",
+//     Health: 130,
+//     Attack: 18,
+//     Defense: 10
+//   };
+  
+//   //Sith
+//   var sidious = {
+//     Name: "Darth Sidious",
+//     Side: "Sith",
+//     Health: 160,
+//     Attack: 20,
+//     Defense: 8
+//   };
+
+//   var maul = {
+//     Name: "Darth Maul",
+//     Side: "Sith",
+//     Health: 125,
+//     Attack: 15,
+//     Defense: 20
+//   };
+
+//   var vader = {
+//     Name: "Darth Vader",
+//     Side: "Sith",
+//     Health: 100,
+//     Attack: 16,
+//     Defense: 18
+//   };
+
+//   var kylo = {
+//     Name: "Kylo Ren",
+//     Side: "Sith",
+//     Health: 95,
+//     Attack: 13,
+//     Defense: 16
+//   };
 
 // *~*~*~*~*~*~*~ Choose a side *~*~*~*~*~*~*~
 

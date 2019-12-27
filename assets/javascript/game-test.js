@@ -18,71 +18,6 @@ $(function() {
   var vader = new Char ("Darth Vader", "Sith", 100, 16, 18);
   var kylo = new Char ("Kylo Ren", "Sith", 95, 13, 16);
 
-//Jedi
-//   var quigon = {
-//     Name: "Qui-Gon Jinn",
-//     Side: "Jedi",
-//     Health: 150,
-//     Attack: 16,
-//     Defense: 15
-//   };
-//   var obiwan = {
-//     Name: "Obi-Wan Kenobi",
-//     Side: "Jedi",
-//     Health: 120,
-//     Attack: 8,
-//     Defense: 22
-//   };
-
-//   var luke = {
-//     Name: "Luke Skywalker",
-//     Side: "Jedi",
-//     Health: 100,
-//     Attack: 13,
-//     Defense: 5
-//   };
-
-//   var rey = {
-//     Name: "Rey",
-//     Side: "Jedi",
-//     Health: 130,
-//     Attack: 18,
-//     Defense: 10
-//   };
-  
-//   //Sith
-//   var sidious = {
-//     Name: "Darth Sidious",
-//     Side: "Sith",
-//     Health: 160,
-//     Attack: 20,
-//     Defense: 8
-//   };
-
-//   var maul = {
-//     Name: "Darth Maul",
-//     Side: "Sith",
-//     Health: 125,
-//     Attack: 15,
-//     Defense: 20
-//   };
-
-//   var vader = {
-//     Name: "Darth Vader",
-//     Side: "Sith",
-//     Health: 100,
-//     Attack: 16,
-//     Defense: 18
-//   };
-
-//   var kylo = {
-//     Name: "Kylo Ren",
-//     Side: "Sith",
-//     Health: 95,
-//     Attack: 13,
-//     Defense: 16
-//   };
-
   var attacker = {};
   var defender = {};
 
@@ -247,7 +182,7 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#sidious2").remove();
-    // $('.maul2', '.vader2', '.kylo2').appendTo('#remaining-opponents');
+    $('.maul2', '.vader2', '.kylo2').appendTo('#remaining-opponents');
     $("#jedi-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
@@ -261,6 +196,7 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#maul2").remove();
+    $('.sidious2', '.vader2', '.kylo2').appendTo('#remaining-opponents');
     $("#jedi-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
@@ -274,6 +210,7 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#vader2").remove();
+    $('.maul2', '.sidious2', '.kylo2').appendTo('#remaining-opponents');
     $("#jedi-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
@@ -287,6 +224,7 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#kylo2").remove();
+    $('.maul2', '.vader2', '.sidious2').appendTo('#remaining-opponents');
     $("#jedi-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
@@ -301,6 +239,7 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#qui-gon2").remove();
+    $('.obi-wan2', '.luke2', '.rey2').appendTo('#remaining-opponents');
     $("#sith-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
@@ -314,6 +253,7 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#obi-wan2").remove();
+    $('.qui-gon2', '.luke2', '.rey2').appendTo('#remaining-opponents');
     $("#sith-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
@@ -327,6 +267,7 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#luke2").remove();
+    $('.obi-wan2', '.qui-gon2', '.rey2').appendTo('#remaining-opponents');
     $("#sith-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
@@ -340,6 +281,7 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#rey2").remove();
+    $('.obi-wan2', '.luke2', '.qui-gon2').appendTo('#remaining-opponents');
     $("#sith-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
@@ -349,14 +291,7 @@ $(function() {
   });
 
   // *~*~*~*~*~*~*~ Fight, Fight, Fight *~*~*~*~*~*~*~
-  var attackerHealth = attacker["health"];
-  var attackerBaseAttack = attacker["attack"];
-  var attackCount = 1;
-  var attackerAttack = attackCount * attackerBaseAttack;
-  var defenderHealth = defender["health"];
-  var defenderDefense = defender["defense"];
-  var currentAttackerHealth = attackerHealth - defenderDefense;
-  var currentDefenderHealth = defenderHealth - attackerAttack;
+  
 
 
 
@@ -367,23 +302,23 @@ $(function() {
   //if no, replace with new opponent
   //if yes, game continues
 
-  function attack() {
-    if (attackerHealth >= 0) {
-        currentAttackerHealth;
-        currentDefenderHealth;
-        attackCount++
-        console.log(attacker);
-        console.log(defender);
-    } else {
-        console.log("The attacker is dead.")
-    }
-}
+  var attackerHealth = attacker[2];
+  var attackerBaseAttack = attacker[3];
+  var attackCount = 1;
+  var attackerAttack = attackCount * attackerBaseAttack;
+  var defenderHealth = defender[2];
+  var defenderDefense = defender[4];
+  var currentAttackerHealth = attackerHealth - defenderDefense;
+  var currentDefenderHealth = defenderHealth - attackerAttack; 
 
-  $("#attack").on("click", function() {
-    console.log("The Attacker attacked.");
-    attack();
-  });
-
+ $('#attack').on("click", function() {
+    console.log(attackerHealth);
+ });
+    
+ 
+    
+    
+ 
 
 
 
