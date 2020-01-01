@@ -21,6 +21,19 @@ $(function() {
   var attacker = {};
   var defender = {};
 
+
+  var attackerHealth = attacker[2];
+  var attackerBaseAttack = attacker[3];
+  var attackCount = 1;
+  var attackerAttack = attackCount * attackerBaseAttack;
+  var defenderHealth = defender[2];
+  var defenderDefense = defender[4];
+  var currentAttackerHealth = attackerHealth - defenderDefense;
+  var currentDefenderHealth = defenderHealth - attackerAttack; 
+
+  
+    
+
   // *~*~*~*~*~*~*~ Choose a side *~*~*~*~*~*~*~
 
   $("#Jedi").on("click", function() {
@@ -41,17 +54,12 @@ $(function() {
       .appendTo("#attacker-jedi")
       .addClass("attacker");
     $("#qui-gon").addClass("hidden");
-    var attackButton = document.createElement("button");
-    document.getElementById("qui-gon-card").appendChild(attackButton);
-    $(attackButton)
-      .text("Attack")
-      .addClass("btn btn-success")
-      .attr("id", "attack")
-      .appendTo("qui-gon-card");
-    $("#jedi-characters").addClass("hidden");
-    $("#jedi-opponents").removeClass("hidden");
+    $('#attackButton').removeClass('hidden')
     Object.assign(attacker, quigon);
     console.log(attacker);
+    console.log(attacker.length);
+    $("#jedi-characters").addClass("hidden");
+    $("#jedi-opponents").removeClass("hidden");
   });
 
   $("#obi-wan").on("click", function() {
@@ -302,19 +310,6 @@ $(function() {
   //if no, replace with new opponent
   //if yes, game continues
 
-  var attackerHealth = attacker[2];
-  var attackerBaseAttack = attacker[3];
-  var attackCount = 1;
-  var attackerAttack = attackCount * attackerBaseAttack;
-  var defenderHealth = defender[2];
-  var defenderDefense = defender[4];
-  var currentAttackerHealth = attackerHealth - defenderDefense;
-  var currentDefenderHealth = defenderHealth - attackerAttack; 
-
- $('#attack').on("click", function() {
-    console.log(attackerHealth);
- });
-    
  
     
     
