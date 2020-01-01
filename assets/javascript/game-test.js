@@ -21,18 +21,7 @@ $(function() {
   var attacker = {};
   var defender = {};
 
-
-  var attackerHealth = attacker[2];
-  var attackerBaseAttack = attacker[3];
-  var attackCount = 1;
-  var attackerAttack = attackCount * attackerBaseAttack;
-  var defenderHealth = defender[2];
-  var defenderDefense = defender[4];
-  var currentAttackerHealth = attackerHealth - defenderDefense;
-  var currentDefenderHealth = defenderHealth - attackerAttack; 
-
-  
-    
+ 
 
   // *~*~*~*~*~*~*~ Choose a side *~*~*~*~*~*~*~
 
@@ -57,7 +46,6 @@ $(function() {
     $('#attackButton').removeClass('hidden')
     Object.assign(attacker, quigon);
     console.log(attacker);
-    console.log(attacker.length);
     $("#jedi-characters").addClass("hidden");
     $("#jedi-opponents").removeClass("hidden");
   });
@@ -300,9 +288,6 @@ $(function() {
 
   // *~*~*~*~*~*~*~ Fight, Fight, Fight *~*~*~*~*~*~*~
   
-
-
-
 // Check if attacker is alive
   //if no, game ends
   //if yes, game continues
@@ -310,8 +295,30 @@ $(function() {
   //if no, replace with new opponent
   //if yes, game continues
 
+  var { attackerName, attackerSide, attackerHealth, attackerBaseAttack, attackerDefense } = attacker;
+  var { defenderName, defenderSide, defenderHealth, defenderAttack, defenderDefense } = defender;
+  var attackCount = 1;
+  var attackerAttack = attackCount * attackerBaseAttack;
+  var currentAttackerHealth = attackerHealth - defenderDefense;
+  var currentDefenderHealth = defenderHealth - attackerAttack; 
+
  
-    
+      $('#attackButton').on("click", function attack() {
+        console.log("Attack.");
+        console.log(attacker);
+        console.log(defender);
+        console.log(attackCount);
+
+        // if (attackerHealth > 0) {
+        //   attackerAttack;
+        //   attackCount++;
+        //   console.log(currentAttackerHealth);
+        //   console.log(currentDefenderHealth);
+        // }
+
+      });
+
+      
     
  
 
