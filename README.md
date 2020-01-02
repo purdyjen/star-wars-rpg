@@ -1,17 +1,13 @@
 # unit-4-game
 
+*This is a Star Wars Role Playing Game (RPG)
 
+##To Play
+*Choose a Side: Jedi or Sith
+*Choose a Character
+*Choose an opponent
 
 # image sources
-background: https://imgur.com/gallery/sYIU1
-https://wallpapermemory.com/desktop-backgrounds/movie/star-wars/1920x1080
-
-Brown-Arena: https://finalfantasy.fandom.com/wiki/Dragon%27s_Neck_Coliseum
-
-Blue-Arena: https://all4desktop.com/4237551-background-hd.html
-
-Red-Arena: https://wallpapersafari.com/w/3Qf14A
-
 Qui-Gon: https://www.starwars.com/databank/qui-gon-jinn
 
 Obi-Wan: https://www.theverge.com/2019/8/23/20830478/obi-wan-kenobi-standalone-spinoff-series-disney-plus-series-ewan-mcgregor-streaming-star-wars

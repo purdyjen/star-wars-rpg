@@ -1,27 +1,42 @@
 $(function() {
   //doc ready opening tags
 
-  function Char (name, side, health, attack, defense) {
-    this.name = name;
-    this.side = side;
-    this.health = health;
-    this.attack = attack;
-    this.defense = defense;
+  function attackChar (attackerName, attackerSide, attackerHealth, attackerBaseAttack, attackerDefense) {
+    this.name = attackerName;
+    this.side = attackerSide;
+    this.health = attackerHealth;
+    this.attack = attackerBaseAttack;
+    this.defense = attackerDefense;
   }
 
-  var quigon = new Char ("Qui-gon Jinn", "Jedi", 150, 16, 15);
-  var obiwan = new Char ("Obi-Wan Kenobi", "Jedi", 120, 8, 22);
-  var luke = new Char ("Luke Skywalker", "Jedi", 100, 13, 5);
-  var rey = new Char ("Rey", "Jedi", 130, 18, 10);
-  var sidious = new Char ("Darth Sidious", "Sith", 160, 20, 8);
-  var maul = new Char ("Darth Maul", "Sith", 125, 15, 20);
-  var vader = new Char ("Darth Vader", "Sith", 100, 16, 18);
-  var kylo = new Char ("Kylo Ren", "Sith", 95, 13, 16);
+  function defendChar (defenderName, defenderSide, defenderHealth, defenderBaseAttack, defenderDefense) {
+    this.name = defenderName;
+    this.side = defenderSide;
+    this.health = defenderHealth;
+    this.attack = defenderBaseAttack;
+    this.defense = defenderDefense;
+  }
+
+  var quigon = new attackChar ("Qui-gon Jinn", "Jedi", 150, 16, 15);
+  var obiwan = new attackChar ("Obi-Wan Kenobi", "Jedi", 120, 8, 22);
+  var luke = new attackChar ("Luke Skywalker", "Jedi", 100, 13, 5);
+  var rey = new attackChar ("Rey", "Jedi", 130, 18, 10);
+  var sidious = new attackChar ("Darth Sidious", "Sith", 160, 20, 8);
+  var maul = new attackChar ("Darth Maul", "Sith", 125, 15, 20);
+  var vader = new attackChar ("Darth Vader", "Sith", 100, 16, 18);
+  var kylo = new attackChar ("Kylo Ren", "Sith", 95, 13, 16);
+
+  var quigon2 = new defendChar ("Qui-gon Jinn", "Jedi", 150, 16, 15);
+  var obiwan2 = new defendChar ("Obi-Wan Kenobi", "Jedi", 120, 8, 22);
+  var luke2 = new defendChar ("Luke Skywalker", "Jedi", 100, 13, 5);
+  var rey2 = new defendChar ("Rey", "Jedi", 130, 18, 10);
+  var sidious2 = new defendChar ("Darth Sidious", "Sith", 160, 20, 8);
+  var maul2 = new defendChar ("Darth Maul", "Sith", 125, 15, 20);
+  var vader2 = new defendChar ("Darth Vader", "Sith", 100, 16, 18);
+  var kylo2 = new defendChar ("Kylo Ren", "Sith", 95, 13, 16);
 
   var attacker = {};
   var defender = {};
-
- 
 
   // *~*~*~*~*~*~*~ Choose a side *~*~*~*~*~*~*~
 
@@ -183,7 +198,7 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
-    Object.assign(defender, sidious);
+    Object.assign(defender, sidious2);
     console.log(defender);
   });
 
@@ -197,7 +212,7 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
-    Object.assign(defender, maul);
+    Object.assign(defender, maul2);
     console.log(defender);
   });
 
@@ -211,7 +226,7 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
-    Object.assign(defender, vader);
+    Object.assign(defender, vader2);
     console.log(defender);
   });
 
@@ -225,7 +240,7 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
-    Object.assign(defender, kylo);
+    Object.assign(defender, kylo2);
     console.log(defender);
   });
 
@@ -240,7 +255,7 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
-    Object.assign(defender, quigon);
+    Object.assign(defender, quigon2);
     console.log(defender);
   });
 
@@ -254,7 +269,7 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
-    Object.assign(defender, obiwan);
+    Object.assign(defender, obiwan2);
     console.log(defender);
   });
 
@@ -268,7 +283,7 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
-    Object.assign(defender, luke);
+    Object.assign(defender, luke2);
     console.log(defender);
   });
 
@@ -282,18 +297,23 @@ $(function() {
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
-    Object.assign(defender, rey);
+    Object.assign(defender, rey2);
     console.log(defender);
   });
 
   // *~*~*~*~*~*~*~ Fight, Fight, Fight *~*~*~*~*~*~*~
   
 // Check if attacker is alive
-  //if no, game ends
+  //if no, player loses and game ends
   //if yes, game continues
 //Check if defender is alive
-  //if no, replace with new opponent
-  //if yes, game continues
+  //if yes, continue with current opponent
+  //if no, check remaining opponent array for remaining opponents 
+      //if remaining opponents, prompt player to choose new opponent
+      //if no remaining opponents, player wins
+
+
+  
 
   var { attackerName, attackerSide, attackerHealth, attackerBaseAttack, attackerDefense } = attacker;
   var { defenderName, defenderSide, defenderHealth, defenderAttack, defenderDefense } = defender;
@@ -308,13 +328,8 @@ $(function() {
         console.log(attacker);
         console.log(defender);
         console.log(attackCount);
-
-        // if (attackerHealth > 0) {
-        //   attackerAttack;
-        //   attackCount++;
-        //   console.log(currentAttackerHealth);
-        //   console.log(currentDefenderHealth);
-        // }
+        
+  
 
       });
 
