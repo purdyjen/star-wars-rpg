@@ -15,6 +15,8 @@
     <title>Star Wars RPG!</title>
     <!-- Added link to the jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game-test.js"></script>
     <!-- <script type="text/javascript" src="assets/javascript/post-tutoring.js"></script> -->
   </head>
@@ -34,7 +36,7 @@
         <h2>Choose Your Character!</h2>
        
         <div class="card-deck light">
-          <div class="qui-gon card light" health='125' attack='16' defense='14' style="width: 150px;">
+          <div class="qui-gon card light" style="width: 150px;">
             <img
               src="assets/images/Qui-Gon-Jinn.jpeg"
               class="card-img-top"
@@ -51,7 +53,7 @@
             </div>
           </div>
           
-          <div  class="card light obi-wan" style="width: 150px;" health='120' attack='8' defense='15'>
+          <div  class="card light obi-wan" style="width: 150px;">
             <img
               src="assets/images/obi-wan.jpg"
               class="card-img-top"
@@ -67,7 +69,7 @@
             </div>
           </div>
 
-          <div class="card light luke" style="width: 150px;" health='100' attack='13' defense='5'>
+          <div class="card light luke" style="width: 150px;">
             <img
               src="assets/images/luke-skywalker2.jpeg"
               class="card-img-top"
@@ -83,7 +85,7 @@
             </div>
           </div>
 
-          <div  class="card light rey" style="width: 150px;" health='135' attack='18' defense='10'>
+          <div  class="card light rey" style="width: 150px;">
             <img src="assets/images/rey1.jpg" class="card-img-top" alt="..." />
             <div id="rey-card" class="card-body">
               <h5 class="card-title">Rey</h5>
@@ -103,7 +105,7 @@
         <h2>Choose Your Character!</h2>
 
           <div class="card-deck dark">
-              <div class="card dark text-white bg-dark sidious" style="width: 150px;" health='150' attack='20' defense='8'>
+              <div class="card dark text-white bg-dark sidious" style="width: 150px;">
                 <img
                   src="assets/images/darth-sidious.jpg"
                   class="card-img-top"
@@ -119,7 +121,7 @@
                 </div>
               </div>
 
-              <div class="card dark text-white bg-dark maul" style="width: 150px;" health='130' attack='15' defense='20'>
+              <div class="card dark text-white bg-dark maul" style="width: 150px;">
                 <img
                   src="assets/images/DarthMaul-SWD.png"
                   class="card-img-top"
@@ -135,7 +137,7 @@
                 </div>
               </div>
 
-              <div class="card dark text-white bg-dark vader" style="width: 150px;" health='105' attack='16' defense='12'>
+              <div class="card dark text-white bg-dark vader" style="width: 150px;">
                 <img
                   src="assets/images/vader.jpeg"
                   class="card-img-top"
@@ -151,7 +153,7 @@
                 </div>
               </div>
 
-              <div class="card dark text-white bg-dark kylo" style="width: 150px;" health='95' attack='13' defense='16'>
+              <div class="card dark text-white bg-dark kylo" style="width: 150px;">
                 <img
                   src="assets/images/Kylo-Ren-Lightsaber.jpg"
                   class="card-img-top"
@@ -175,7 +177,7 @@
         <h2>Choose Your Opponent!</h2>
       <!-- dark -->
       <div class="card-deck">
-        <div class="card dark text-white bg-dark sidious2" style="width: 150px;" health='150' attack='20' defense='8'>
+        <div class="card dark text-white bg-dark sidious2" style="width: 150px;">
           <img
             src="assets/images/darth-sidious.jpg"
             class="card-img-top"
@@ -190,7 +192,7 @@
           </div>
         </div>
 
-        <div class="card dark text-white bg-dark maul2" style="width: 150px;" health='130' attack='15' defense='20'>
+        <div class="card dark text-white bg-dark maul2" style="width: 150px;">
           <img
             src="assets/images/DarthMaul-SWD.png"
             class="card-img-top"
@@ -205,7 +207,7 @@
           </div>
         </div>
 
-        <div class="card dark text-white bg-dark vader2" style="width: 150px;" health='105' attack='16' defense='12'>
+        <div class="card dark text-white bg-dark vader2" style="width: 150px;">
           <img
             src="assets/images/vader.jpeg"
             class="card-img-top"
@@ -220,7 +222,7 @@
           </div>
         </div>
 
-        <div class="card dark text-white bg-dark kylo2" style="width: 150px;" health='95' attack='13' defense='16'>
+        <div class="card dark text-white bg-dark kylo2" style="width: 150px;">
           <img
             src="assets/images/Kylo-Ren-Lightsaber.jpg"
             class="card-img-top"
@@ -240,11 +242,11 @@
       <!-- Sith Opponents -->
       <!-- Available Opponents -->
       <div class="container hidden" id="sith-opponents">
-        <h2>Choose Your Opponent!</h2>
+        <!-- <h2>Choose Your Opponent!</h2> -->
 
         <!-- light -->
         <div class="card-deck">
-          <div class="qui-gon2 card light" health='125' attack='16' defense='14' style="width: 150px;">
+          <div class="qui-gon2 card light" style="width: 150px;">
             <img
               src="assets/images/Qui-Gon-Jinn.jpeg"
               class="card-img-top"
@@ -260,7 +262,7 @@
             </div>
           </div>
 
-          <div class="obi-wan2 card light" style="width: 150px;" health='120' attack='8' defense='15'>
+          <div class="obi-wan2 card light" style="width: 150px;">
             <img
               src="assets/images/obi-wan.jpg"
               class="card-img-top"
@@ -275,7 +277,7 @@
             </div>
           </div>
 
-          <div class="luke2 card light" style="width: 150px;" health='100' attack='13' defense='5'>
+          <div class="luke2 card light" style="width: 150px;">
             <img
               src="assets/images/luke-skywalker2.jpeg"
               class="card-img-top"
@@ -290,7 +292,7 @@
             </div>
           </div>
 
-          <div  class="card light rey" style="width: 150px;" health='135' attack='18' defense='10'>
+          <div  class="card light rey" style="width: 150px;">
             <img src="assets/images/rey1.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Rey</h5>
@@ -304,9 +306,35 @@
         </div>
     </div>
 
-    <div id="remaining-opponents" class="remainingOpponents hidden">
-      
+    
+<!-- Button trigger modal -->
+<!-- <button id="myModal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+  Launch static backdrop modal
+</button> -->
+
+<!-- Modal -->
+<div id="myModal3" class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Select Another Opponent!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="remainingOpponents">
+          <div id="remaining-opponents"></div>
+        </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div> -->
     </div>
+  </div>
+</div>
+</div>
+
       <!-- Fighting Arena -->
       <div class="arena hidden container-fluid">
         <div class="jumbotron jumbotron-fluid">
@@ -327,16 +355,6 @@
                 <h3>Defender</h3>
               </div>
             </div>
-
-            <!-- Creates the popup body
-<div class="popup-overlay">
-  Creates the popup content
-  <div class="popup-content">
-    <h2>Select Another Opponent!</h2>
-    <div id="remaining-opponents"></div>
-    popup's close button
-    <button class="close">Close</button> </div>
-</div> -->
 
           </div>
         </div>
