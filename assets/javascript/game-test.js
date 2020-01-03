@@ -37,6 +37,8 @@ $(function() {
 
   var attacker = {};
   var defender = {};
+  var remainingOpponents = [];
+  var attackCount = 1;
 
   // *~*~*~*~*~*~*~ Choose a side *~*~*~*~*~*~*~
 
@@ -193,7 +195,7 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#sidious2").remove();
-    $('.maul2', '.vader2', '.kylo2').appendTo('#remaining-opponents');
+    remainingOpponents.push('.maul2', '.vader2', '.kylo2');
     $("#jedi-opponents").addClass("hidden");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
@@ -310,27 +312,31 @@ $(function() {
   //if yes, continue with current opponent
   //if no, check remaining opponent array for remaining opponents 
       //if remaining opponents, prompt player to choose new opponent
+        //function to display array, slice to remove selected opponent, assign object to defender
+        //new opponent moves to arena
       //if no remaining opponents, player wins
 
-
-  
-
-  var { attackerName, attackerSide, attackerHealth, attackerBaseAttack, attackerDefense } = attacker;
-  var { defenderName, defenderSide, defenderHealth, defenderAttack, defenderDefense } = defender;
-  var attackCount = 1;
-  var attackerAttack = attackCount * attackerBaseAttack;
-  var currentAttackerHealth = attackerHealth - defenderDefense;
-  var currentDefenderHealth = defenderHealth - attackerAttack; 
-
- 
-      $('#attackButton').on("click", function attack() {
+  $('#attackButton').on("click", function attack() {
         console.log("Attack.");
+       
+        if (attacker.health > 0) {
+          defender.health -= (attacker.attack * attackCount);
+          attacker.health -= defender.defense;
+          attackCount++;
+        } else {
+          console.error("You lose.");
+        }
+        if (defender.health <= 0) {
+          console.log("check defender");
+          console.log(remainingOpponents);
+          $('#remaining-opponents').removeClass('hidden');
+          
+        }
         console.log(attacker);
         console.log(defender);
         console.log(attackCount);
-        
-  
-
+        console.log(attacker.health);
+        console.log(defender.health);
       });
 
       
