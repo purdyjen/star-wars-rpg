@@ -31,7 +31,7 @@ $(function() {
 
   var quigon = new attackChar("Qui-gon Jinn", "Jedi", 150, 16, 15);
   var obiwan = new attackChar("Obi-Wan Kenobi", "Jedi", 120, 8, 22);
-  var luke = new attackChar("Luke Skywalker", "Jedi", 100, 13, 5);
+  var luke = new attackChar("Luke Skywalker", "Jedi", 135, 13, 5);
   var rey = new attackChar("Rey", "Jedi", 130, 18, 10);
   var sidious = new attackChar("Darth Sidious", "Sith", 160, 20, 8);
   var maul = new attackChar("Darth Maul", "Sith", 125, 15, 20);
@@ -40,7 +40,7 @@ $(function() {
 
   var quigon2 = new defendChar("Qui-gon Jinn", "Jedi", 150, 16, 15);
   var obiwan2 = new defendChar("Obi-Wan Kenobi", "Jedi", 120, 8, 22);
-  var luke2 = new defendChar("Luke Skywalker", "Jedi", 100, 13, 5);
+  var luke2 = new defendChar("Luke Skywalker", "Jedi", 135, 13, 5);
   var rey2 = new defendChar("Rey", "Jedi", 130, 18, 10);
   var sidious2 = new defendChar("Darth Sidious", "Sith", 160, 20, 8);
   var maul2 = new defendChar("Darth Maul", "Sith", 125, 15, 20);
