@@ -8,6 +8,10 @@
     display: block;
 }
 
+.card {
+    max-width: 300px;
+}
+
 .card-body {
     width: 150px;
     padding: .5rem;
