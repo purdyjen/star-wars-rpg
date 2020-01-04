@@ -1,7 +1,6 @@
-
 $(function() {
   //doc ready opening tags
- 
+
   function attackChar(
     attackerName,
     attackerSide,
@@ -54,18 +53,18 @@ $(function() {
   var remainingSithOpponents = [1, 2, 3, 4];
   var attackCount = 1;
 
-  function selectOpponent(){
-      $("#myModal3").modal({backdrop: "static"});
-      $("#myModal3").modal('show');
+  function selectOpponent() {
+    $("#myModal3").modal({ backdrop: "static" });
+    $("#myModal3").modal("show");
   }
 
   function attackerStats() {
-    $('.attacker-stats').text("Health: " + attacker.health);
+    $(".attacker-stats").text("Health: " + attacker.health);
     console.log("attacker stats check");
   }
 
-  function defenderStats () {
-    $('.defender-stats').text("Health: " + defender.health);
+  function defenderStats() {
+    $(".defender-stats").text("Health: " + defender.health);
     console.log("defender stats check");
   }
 
@@ -89,7 +88,7 @@ $(function() {
       .appendTo("#attacker-jedi")
       .addClass("attacker");
     $("#qui-gon").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#jedi-characters").addClass("hidden");
     $("#jedi-opponents").removeClass("hidden");
     Object.assign(attacker, quigon);
@@ -102,7 +101,7 @@ $(function() {
       .appendTo("#attacker-jedi")
       .addClass("attacker");
     $("#obi-wan").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#jedi-characters").addClass("hidden");
     $("#jedi-opponents").removeClass("hidden");
     Object.assign(attacker, obiwan);
@@ -115,7 +114,7 @@ $(function() {
       .appendTo("#attacker-jedi")
       .addClass("attacker");
     $("#luke").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#jedi-characters").addClass("hidden");
     $("#jedi-opponents").removeClass("hidden");
     Object.assign(attacker, luke);
@@ -128,7 +127,7 @@ $(function() {
       .appendTo("#attacker-jedi")
       .addClass("attacker");
     $("#rey").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#jedi-characters").addClass("hidden");
     $("#jedi-opponents").removeClass("hidden");
     Object.assign(attacker, rey);
@@ -142,7 +141,7 @@ $(function() {
       .appendTo("#attacker-sith")
       .addClass("attacker");
     $("#sidious").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#sith-characters").addClass("hidden");
     $("#sith-opponents").removeClass("hidden");
     Object.assign(attacker, sidious);
@@ -155,7 +154,7 @@ $(function() {
       .appendTo("#attacker-sith")
       .addClass("attacker");
     $("#maul").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#sith-characters").addClass("hidden");
     $("#sith-opponents").removeClass("hidden");
     Object.assign(attacker, maul);
@@ -168,7 +167,7 @@ $(function() {
       .appendTo("#attacker-sith")
       .addClass("attacker");
     $("#vader").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#sith-characters").addClass("hidden");
     $("#sith-opponents").removeClass("hidden");
     Object.assign(attacker, vader);
@@ -181,7 +180,7 @@ $(function() {
       .appendTo("#attacker-sith")
       .addClass("attacker");
     $("#kylo").addClass("hidden");
-    $('.attackButton').removeClass('hidden');
+    $(".attackButton").removeClass("hidden");
     $("#sith-characters").addClass("hidden");
     $("#sith-opponents").removeClass("hidden");
     Object.assign(attacker, kylo);
@@ -210,7 +209,7 @@ $(function() {
       .removeClass("kylo2")
       .addClass("kylo3");
     $("#jedi-opponents").addClass("hidden");
-    $('h2').remove('.opponents');
+    $("h2").remove(".opponents");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
@@ -236,7 +235,7 @@ $(function() {
       .removeClass("kylo2")
       .addClass("kylo3");
     $("#jedi-opponents").addClass("hidden");
-    $('h2').remove('.opponents');
+    $("h2").remove(".opponents");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
@@ -263,7 +262,7 @@ $(function() {
       .removeClass("kylo2")
       .addClass("kylo3");
     $("#jedi-opponents").addClass("hidden");
-    $('h2').remove('.opponents');
+    $("h2").remove(".opponents");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
@@ -290,7 +289,7 @@ $(function() {
       .removeClass("sidious2")
       .addClass("sidious3");
     $("#jedi-opponents").addClass("hidden");
-    $('h2').remove('#opponents');
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     $("#attacker-sith").addClass("hidden");
     $("#defender-jedi").addClass("hidden");
@@ -318,7 +317,7 @@ $(function() {
       .removeClass("rey2")
       .addClass("rey3");
     $("#sith-opponents").addClass("hidden");
-    $('h2').remove('#opponents');
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
@@ -345,7 +344,7 @@ $(function() {
       .removeClass("rey2")
       .addClass("rey3");
     $("#sith-opponents").addClass("hidden");
-    $('h2').remove('#opponents');
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
@@ -372,7 +371,7 @@ $(function() {
       .removeClass("rey2")
       .addClass("rey3");
     $("#sith-opponents").addClass("hidden");
-    $('h2').remove('#opponents');
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
@@ -399,7 +398,7 @@ $(function() {
       .removeClass("qui-gon2")
       .addClass("qui-gon3");
     $("#sith-opponents").addClass("hidden");
-    $('h2').remove('#opponents');
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     $("#defender-sith").addClass("hidden");
     $("#attacker-jedi").addClass("hidden");
@@ -415,8 +414,8 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#sidious2").remove();
-    $('h2').remove('#opponents');
-    $("#myModal3").modal('hide');
+    $("h2").remove("#opponents");
+    $("#myModal3").modal("hide");
     $(".arena").removeClass("hidden");
     remainingJediOpponents.pop();
     Object.assign(defender, sidious2);
@@ -429,8 +428,8 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#maul2").remove();
-    $('h2').remove('#opponents');
-    $("#myModal3").modal('hide');
+    $("h2").remove("#opponents");
+    $("#myModal3").modal("hide");
     $(".arena").removeClass("hidden");
     remainingJediOpponents.pop();
     Object.assign(defender, maul2);
@@ -443,8 +442,8 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#vader2").remove();
-    $("#myModal3").modal('hide');
-    $('h2').remove('#opponents');
+    $("#myModal3").modal("hide");
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     remainingJediOpponents.pop();
     Object.assign(defender, vader2);
@@ -457,8 +456,8 @@ $(function() {
       .appendTo("#defender-sith")
       .addClass("defender");
     $("#kylo2").remove();
-    $("#myModal3").modal('hide');
-    $('h2').remove('#opponents');
+    $("#myModal3").modal("hide");
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     remainingJediOpponents.pop();
     Object.assign(defender, kylo2);
@@ -471,8 +470,8 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#qui-gon2").remove();
-    $('h2').remove('#opponents');
-    $("#myModal3").modal('hide');
+    $("h2").remove("#opponents");
+    $("#myModal3").modal("hide");
     $(".arena").removeClass("hidden");
     remainingSithOpponents.pop();
     Object.assign(defender, quigon2);
@@ -485,8 +484,8 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#obi-wan2").remove();
-    $('h2').remove('#opponents');
-    $("#myModal3").modal('hide');
+    $("h2").remove("#opponents");
+    $("#myModal3").modal("hide");
     $(".arena").removeClass("hidden");
     remainingSithOpponents.pop();
     Object.assign(defender, obiwan2);
@@ -499,8 +498,8 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#luke2").remove();
-    $("#myModal3").modal('hide');
-    $('h2').remove('#opponents');
+    $("#myModal3").modal("hide");
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     remainingSithOpponents.pop();
     Object.assign(defender, luke2);
@@ -513,8 +512,8 @@ $(function() {
       .appendTo("#defender-jedi")
       .addClass("defender");
     $("#rey2").remove();
-    $("#myModal3").modal('hide');
-    $('h2').remove('#opponents');
+    $("#myModal3").modal("hide");
+    $("h2").remove("#opponents");
     $(".arena").removeClass("hidden");
     remainingSithOpponents.pop();
     Object.assign(defender, rey2);
@@ -534,20 +533,17 @@ $(function() {
   //new opponent moves to arena
   //if no remaining opponents, player wins
 
+  function win() {
+    $("#myModal3").modal("hide");
+    $(".arena").addClass("hidden");
+    $("#winner").removeClass("hidden");
+  }
 
-
-
-function win () {
-  $("#myModal3").modal('hide');
-  $('.arena').addClass('hidden');
-  $("#winner").removeClass('hidden');
-}
-
-function lose() {
-  $("#myModal3").modal('hide');
-  $('.arena').addClass('hidden');
-  $("#loser").removeClass('hidden');
-}
+  function lose() {
+    $("#myModal3").modal("hide");
+    $(".arena").addClass("hidden");
+    $("#loser").removeClass("hidden");
+  }
   $(".attackButton").on("click", function attack() {
     console.log("Attack.");
 
@@ -570,12 +566,11 @@ function lose() {
         win();
         return;
       }
-      
+
       $(".defender").remove();
       selectOpponent();
       $("#remaining-opponents").removeClass("hidden");
       $(".arena").addClass("hidden");
-      
     }
 
     console.log(attacker);
