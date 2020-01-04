@@ -8,9 +8,17 @@
     display: block;
 }
 
-.card {
-    display: flex;
+.card-body {
+    width: 150px;
+    padding: .5rem;
 }
+
+.card-title {
+    width: 200px;
+    
+}
+
+
 
 #side {
     margin: 0 auto;
@@ -76,4 +84,17 @@
 .attacker, .defender{
     margin: 150px auto;
     vertical-align: middle;
+}
+
+.jumbotron {
+    padding: 0;
+}
+
+.attacker-stats {
+    color: #ffffff;
+    text-align: right;
+}
+
+.defender-stats {
+    color: #ffffff;
 }
