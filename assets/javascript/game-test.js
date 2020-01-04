@@ -551,6 +551,7 @@ $(function() {
         remainingJediOpponents.length === 0 ||
         remainingSithOpponents.length === 0
       ) {
+        $("#myModal3").modal('hide');
         alert("You win!");
       }
     }
