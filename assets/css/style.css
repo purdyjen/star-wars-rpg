@@ -22,8 +22,6 @@
     
 }
 
-
-
 #side {
     margin: 0 auto;
     width: 300px;
@@ -70,7 +68,7 @@
 
 #defender-jedi h3 {
     color: #ffffff;
-    text-align: right;
+    text-align: left;
 }
 
 #attacker-sith {
@@ -83,6 +81,7 @@
 
 #attacker-sith h3 {
     color: #ffffff;
+    text-align: right;
 }
 
 .attacker, .defender{
