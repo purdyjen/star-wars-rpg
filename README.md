@@ -1,13 +1,13 @@
 # unit-4-game
 https://purdyjen.github.io/unit-4-game/
-*This is a Star Wars Role Playing Game (RPG)
+This is a Star Wars Role Playing Game (RPG)
 
 ##To Play
-*Choose a Side: Jedi or Sith
-*Choose a Character
-*Choose an opponent
+-Choose a Side: Jedi or Sith
+-Choose a Character
+-Choose an opponent
 
-# image sources
+## image sources
 Qui-Gon: https://www.starwars.com/databank/qui-gon-jinn
 
 Obi-Wan: https://www.theverge.com/2019/8/23/20830478/obi-wan-kenobi-standalone-spinoff-series-disney-plus-series-ewan-mcgregor-streaming-star-wars
