@@ -2,10 +2,12 @@
 https://purdyjen.github.io/unit-4-game/
 This is a Star Wars Role Playing Game (RPG)
 
-##To Play
--Choose a Side: Jedi or Sith
--Choose a Character
--Choose an opponent
+## To Play
+* Choose a Side: Jedi or Sith
+* Choose a Character
+* Choose an Opponent
+* Your attack damage increases after each successful attack.
+* Keep attacking until your character dies or until you defeat all four opponents.
 
 ## image sources
 Qui-Gon: https://www.starwars.com/databank/qui-gon-jinn
@@ -15,7 +17,6 @@ Obi-Wan: https://www.theverge.com/2019/8/23/20830478/obi-wan-kenobi-standalone-s
 Luke: https://comicvine1.cbsistatic.com/uploads/original/11118/111184078/4750642-2984722893-455197.jpeg
 
 Rey: https://www.moviemania.io/wallpaper/dm3wa819fd-star-wars-the-last-jedi
-
 
 Darth Sidious: https://aminoapps.com/c/star-wars/page/blog/how-did-palpatine-get-his-lightsaber-back/GqFn_uL5VJBgGk0WaXPEBKbNwPbW0o
 
