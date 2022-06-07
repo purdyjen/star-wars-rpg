@@ -1,6 +1,6 @@
 # unit-4-game
-https://purdyjen.github.io/unit-4-game/
-This is a Star Wars Role Playing Game (RPG)
+https://purdyjen.github.io/star-wars-rpg/
+This is a Star Wars Role-Playing Game (RPG)
 
 ## To Play
 * Choose a Side: Jedi or Sith
